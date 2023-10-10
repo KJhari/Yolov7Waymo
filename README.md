@@ -1,3 +1,9 @@
+ python trainHPC.py --workers 2 --device 0 --batch-size 8 --data data/waymococohpc.yaml --img 640 640 --cfg cfg/training/yolov7.yaml --weights '' --name yolov7 --hyp data/hyp.scratch.p5.yaml --epochs 10 --save_period 1
+
+
+
+python trainHPC.py --workers 2 --device 0 --batch-size 8 --data data/waymococohpc.yaml --img 640 640 --weights /home/016587116/Assignments/Assignment1/yolov7-ikk688/myyolov7/runs/train/yolov729/weights/last.pt --name yolov7 --hyp data/hyp.scratch.p5.yaml --epochs 10 --save_period 1
+
 # My fork of the official YOLOv7
 * Added YOLOv5 models and perform comparison
 * Perform WaymoCOCO training
